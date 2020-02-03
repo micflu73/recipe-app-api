@@ -130,7 +130,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
 STATIC_URL = '/static/'
+STATIC_ROOT = '/vol/web/static'
 
+
+# upload folder for images, etc
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/vol/web/media'
+
+# custom user model
 AUTH_USER_MODEL = 'core.User'
